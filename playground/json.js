@@ -12,9 +12,14 @@ const fs = require("fs")
 
 const filename = "1-json.json"
 
+const Json2Dict = (filename) =>{
 const databufferjson = fs.readFileSync(filename)
 const databuffer  = databufferjson.toString()
 const data = JSON.parse(databuffer)
+return data 
+}
+
+const data = Json2Dict(filename)
 
 data.name = "ibrahim"
 data.planet = "heaven"
