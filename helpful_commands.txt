@@ -1,3 +1,6 @@
 to debug node 
 1- add debugger 
 2- node inspect app.js
+
+
+killall node
